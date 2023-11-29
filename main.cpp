@@ -1,6 +1,17 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    int a = 42;
+    int b = 153;
+
+    std::cout << "a = " << a << std::endl;
+    std::cout << "b = " << b << std::endl;
+    std::cout << "--------" << std::endl;
+
+    int c = a;
+    a = b;
+    b = c;
+
+    std::cout << "a = " << a << std::endl;
+    std::cout << "b = " << b << std::endl;
 }
